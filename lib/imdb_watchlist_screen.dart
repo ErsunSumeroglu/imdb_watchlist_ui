@@ -40,7 +40,7 @@ class _ImdbWatchlistScreenState extends State<ImdbWatchlistScreen> {
           movieCoverLink: 'https://m.media-amazon.com/images/M/MV5BNzlkZjI3ZDctNTEzMy00MjUxLWI5YjQtYjg0ODNjNzdjZjg0XkEyXkFqcGdeQXVyNTkzNDQ4ODc@._V1_QL75_UY740_CR3,0,500,704_.jpg',
           publishYear: '2022',
           movieMinutes: 135,
-          imdbScore: 7.9,
+          imdbScore: 7.8,
           metaScore: null,
           ageLimit: null,
       isSponsored: true),
@@ -48,7 +48,7 @@ class _ImdbWatchlistScreenState extends State<ImdbWatchlistScreen> {
           movieCoverLink: 'https://m.media-amazon.com/images/M/MV5BOTAxOTlmOTAtMjA0Yy00YjVjLWE3OTQtYjAzMWMxOTAwZTY1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_QL75_UX670_CR0,0,670,980_.jpg',
           publishYear: '2022',
           episodesCount: 6,
-          imdbScore: 7.5,
+          imdbScore: 7.4,
           ageLimit: 'TV-14',
           isSponsored: false),
       Series(movieTitle: 'Stranger Things',
@@ -309,7 +309,7 @@ class _ImdbWatchlistScreenState extends State<ImdbWatchlistScreen> {
                                         children: [
                                             Text("${collections[index].movieTitle}",style: TextStyle(fontSize: 17)),
                                             SizedBox(height: 4),
-                                            Text("${collections[index].publishYear} ${collections[index].episodesCount} ${collections[index].ageLimit}",style: TextStyle(fontSize: 17,color: Colors.white70)),
+                                            Text("${collections[index].publishYear} ${collections[index].episodesCount}eps ${collections[index].ageLimit}",style: TextStyle(fontSize: 17,color: Colors.white70)),
                                           SizedBox(height: 4),
                                             Row(
                                               children: [
