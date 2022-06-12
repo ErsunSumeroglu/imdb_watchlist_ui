@@ -101,7 +101,9 @@ class _ImdbWatchlistScreenState extends State<ImdbWatchlistScreen> {
                 children: [
                   const Text("Bu haftanın en iyi televizyon ve filmleri",style: TextStyle(color: Colors.white60),),
                   Spacer(),
-                  Text("IMDb UI",style: TextStyle(color: Colors.red),)
+                  SizedBox(
+                    height: 18,
+                      child: Image.asset("assets/logo.png")),
                 ],
               ),
             ),
@@ -285,7 +287,7 @@ class _ImdbWatchlistScreenState extends State<ImdbWatchlistScreen> {
                                               children: [
                                                 SvgPicture.asset('assets/star_fill.svg',height: 17,width: 17,),
                                                 SizedBox(width: 4),
-                                                Text("${collections[index].imdbScore}",style: TextStyle(fontSize: 17)),
+                                                Text("${collections[index].imdbScore}",style: TextStyle(fontSize: 15)),
                                                 SizedBox(width: 10),
                                                 collections[index].metaScore != null ? Container(
                                                   height: 18,
